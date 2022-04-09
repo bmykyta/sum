@@ -1,0 +1,29 @@
+{
+    "name": "bmykyta/sum",
+    "description": "A simple package to add two numbers with same/different data types.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "sum",
+        "summator"
+    ],
+    "autoload": {
+        "psr-4": {
+            "bmykyta\\Sum\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mykyta Bondarchuk",
+            "email": "bondarchuk.nik.nb@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5"
+    }
+}
