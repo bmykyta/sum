@@ -21,11 +21,13 @@ class AnotherSumTest extends TestCase
         $this->assertEquals(4, $result);
     }
 
-    public function testGetsCalculateResultWhenCalledWithoutParams()
+    public function testGetsCalculateResultWhenCalledWithoutParams(): void
     {
         $this->expectException('ArgumentCountError');
         $this->expectExceptionMessage('Too few arguments to function');
 
+        /** @noinspection PhpExpressionResultUnusedInspection */
+        /** @noinspection PhpParamsInspection */
         $this->sum->calculate();
     }
 
