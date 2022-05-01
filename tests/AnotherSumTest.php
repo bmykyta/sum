@@ -12,7 +12,7 @@ class AnotherSumTest extends TestCase
         $this->sum = new Sum();
     }
 
-    public function testGetsCalculateResultFromTwoPlusTwo()
+    public function testGetsCalculateResultFromTwoPlusTwo(): void
     {
         $addend = $augend = 2;
         $result = $this->sum->calculate($augend, $addend);
@@ -31,7 +31,7 @@ class AnotherSumTest extends TestCase
         $this->sum->calculate();
     }
 
-    public function testGetsCalculateResultFromOneNegativeNumber()
+    public function testGetsCalculateResultFromOneNegativeNumber(): void
     {
         $augend = -10;
         $addend = 5;
@@ -42,7 +42,7 @@ class AnotherSumTest extends TestCase
         $this->assertEquals(-5, $result);
     }
 
-    public function testGetsCalculateResultFromFloat()
+    public function testGetsCalculateResultFromFloat(): void
     {
         $augend = 1.005;
         $addend = 2;
